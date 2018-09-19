@@ -31,12 +31,12 @@ public class FallFromTree : MonoBehaviour {
 
 			// ^ = even if we rotate the coconut, it always falls towards the ground
 
-		//if (transform.position.y > 0.6f) {
+		if (transform.position.y > 0.6f) {
 			//print ("test: " + transform.position.y); // print to see on console
-		//	transform.Translate (0, -2.5f * Time.deltaTime, 0, Space.World);
-		//}
+			transform.Translate (0, -2.5f * Time.deltaTime, 0, Space.World);
+		}
 
 		// try this instead of if statement above
-		transform.position = new Vector3(0, 5 + Mathf.Sin(Time.time * 5.0f), 0);
+		//transform.position = new Vector3(0, 5 + Mathf.Sin(Time.time * 5.0f), 0);
 	}
 }
